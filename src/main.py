@@ -12,14 +12,7 @@ base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 model_path = os.path.join(base_dir, 'models', 'psl_ann_model.h5')
 task_path = os.path.join(base_dir, 'models', 'hand_landmarker.task')
 
-TARGET_SIGNS = [
-    "A", "B", "C", "D", "E",
-    "Alif", "Bay", "Pay", "Te", "Se",
-    "Pakistan", "ThankYou", "Water", "Yes", "No", 
-    "Hello", "Good", "Please", "Sorry", "Teacher", 
-    "Student", "Help", "Food", "Eat", "Drink", 
-    "Sleep", "Go", "Come", "Stop", "School"
-]
+TARGET_SIGNS =['A', 'Alif', 'B', 'Bay', 'C', 'Come', 'D', 'Drink', 'E', 'Eat', 'Father', 'Food', 'Go', 'Good', 'Hello', 'Help', 'Mother', 'No', 'Pakistan', 'Pay', 'Please', 'School', 'Se', 'Sleep', 'Sorry', 'Stop', 'Student', 'Te', 'Teacher', 'ThankYou', 'Water', 'Yes']
 
 print("📦 Loading trained PSL AI Model Brain...")
 model = load_model(model_path)
